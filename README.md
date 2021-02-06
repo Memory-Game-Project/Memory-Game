@@ -46,4 +46,6 @@
 
 ![Trivia Game Start Screen](/screenshot.PNG "Screenshot")
 
-![Trivia Game Start Screen](/screenshot_confetti.PNG "Screenshot")
+![Trivia Game End Screen](/screenshot_confetti.PNG "Screenshot")
+
+![Trivia Game High Score/ Fox Fact Screen](/screenshot_foxfacts.PNG "Screenshot")
