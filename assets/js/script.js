@@ -15,6 +15,7 @@ var hideHighScoresLink = document.querySelector("#view-highscores");
 var highscoreClick = document.querySelector(".hi-score-title");
 var hideTime = document.querySelector(".time");
 
+
 // element selector to add random colors for the question cards
 var quizCard = document.querySelector("#quiz-q-card");
 
@@ -183,6 +184,7 @@ fetch('https://opentdb.com/api.php?amount=10&type=multiple')
       // hide questions section
       quizScreen.setAttribute("class", "hide");
       randomFactCard.setAttribute("class", "hide");
+      
     }
 
 
@@ -237,8 +239,9 @@ fetch('https://opentdb.com/api.php?amount=10&type=multiple')
         var olEl = document.getElementById("display-scores");
         olEl.appendChild(liTag);
       });
+      
     }
-
+    
     
     // function to clear high scores
     function clearHighscores() {
@@ -279,7 +282,7 @@ fetch('https://opentdb.com/api.php?amount=10&type=multiple')
     quizCard.removeAttribute("class");
     var randomNumber = Math.floor(Math.random() * randomCardColorClass.length);
     quizCard.classList.add("card-panel", randomCardColorClass[randomNumber]);
-    console.log(randomCardColorClass[randomNumber]);
+    // console.log(randomCardColorClass[randomNumber]);
     randomCardColorClass.splice(randomNumber, 1);
     // console.log(randomCardColorClass);
   }

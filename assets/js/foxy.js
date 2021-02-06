@@ -1,3 +1,6 @@
+var showFoxFact = document.querySelector("#foxFactBtn");
+var remove = document.querySelector("#foxFactBtn");
+
 fetch('https://randomfox.ca/floof/')
 .then(function(response) {
     return response.json();
@@ -16,6 +19,7 @@ fetch('https://randomfox.ca/floof/')
     favcon.setAttribute('href', image)
 })
 
+showFoxFact.addEventListener("click", function() {
 var foxFacts = [
 
     "Random Fox Fact! – Foxes are one of the most well known wild animals in the UK, they are native to Britain.",
@@ -90,19 +94,13 @@ var foxFacts = [
     
     
 ];
+ 
 
-/* Randomize array in-place using Durstenfeld shuffle algorithm */
-function shuffleArray(foxFacts) {
-    for (var i = [foxFacts].length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = foxFacts[i];
-        foxFacts[i] = foxFacts[j];
-        foxFacts[j] = temp;
-    }
-    console.log(shuffleArray);
+    var randomFact = Math.floor(Math.random()* foxFacts.length);
+    var factDisplay = document.querySelector('#foxFact');
+    randomFactCard.setAttribute("class", "show");
+    factDisplay.textContent = foxFacts[randomFact];
+    console.log("being loaded");
 
-}
 
-shuffleArray();
-
-// console.log(foxFacts);
+})
