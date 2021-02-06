@@ -91,4 +91,18 @@ var foxFacts = [
     
 ];
 
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+function shuffleArray(foxFacts) {
+    for (var i = [foxFacts].length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = foxFacts[i];
+        foxFacts[i] = foxFacts[j];
+        foxFacts[j] = temp;
+    }
+    console.log(shuffleArray);
+
+}
+
+shuffleArray();
+
 // console.log(foxFacts);
