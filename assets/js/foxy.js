@@ -93,8 +93,9 @@ var foxFacts = [
  
 
     var randomFact = Math.floor(Math.random()* foxFacts.length);
-
+    var showModal  = document.querySelector("#modal1")
     var factDisplay = document.querySelector('#randomFact');
+    showModal.classList.add("show");
     factDisplay.textContent = foxFacts[randomFact];
     console.log("being loaded");
 
