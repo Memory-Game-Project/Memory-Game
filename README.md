@@ -8,7 +8,7 @@
 - If you run out of time, the quiz ends. 
 - At the end of the quiz users are praised with falling confetti and have the choice to submit their high score to save in localStorage and then play again. 
 - Scores are saved and can be viewed at anypoint by clicking “View High Scores”.
-- On the High Score screen they can view random Fox Facts. 
+- On the High Score screen users can view random Fox Facts. 
   
 
 ---
